@@ -1,0 +1,225 @@
+body {
+  /* background-color: #056b05; */
+  /* background-image: linear-gradient(
+    110.9deg,
+    rgba(159, 131, 216, 1) 2.6%,
+    rgba(27, 245, 241, 1) 100.2%
+  );*/
+  background-color: #c20114;
+  background-image: linear-gradient(147deg, #c20114 0%, #e8c547 74%);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.outer {
+  margin: auto;
+  margin-top: 80px;
+  /* background-color: white; */
+  background-size: 50%;
+  height: 700px;
+  width: 90%;
+  border-radius: 12px;
+  box-shadow: 0px -1px 10px 2px rgb(158, 158, 214);
+}
+h1 {
+  display: inline;
+  margin: 0%;
+  margin-left: 150px;
+  color: rgb(238, 14, 51);
+  font-family: "Zen Dots", cursive;
+  font-size: 40px;
+}
+nav {
+  width: 100%;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: "Roboto Slab", serif;
+  background-color: rgb(243, 236, 236);
+}
+ul {
+  margin: 0;
+  display: inline;
+  margin-right: 100px;
+  font-size: 20px;
+}
+li {
+  margin: 0;
+  display: inline;
+  margin-right: 50px;
+  /* float: right; */
+}
+.inner {
+  /* opacity: 0.5; */
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+}
+.inner::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-image: url("dp/fire.jpg");
+  background-size: 1600px 200px;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  /* background-position-y: 450px; */
+  z-index: -1;
+}
+.inner1 {
+  width: 55%;
+  height: 640px;
+  /* background-color: turquoise; */
+  display: inline-flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* position: relative; */
+}
+.inner2 {
+  /* display: inline-flex; */
+  position: relative;
+  /* top: -1000px; */
+  width: 55%;
+  height: 640px;
+  /* background-color: rgb(175, 46, 57); */
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  margin: auto;
+  margin-left: 10px;
+}
+.acelogo {
+  background: url("dp/logoo.png");
+  /* mix-blend-mode: luminosity; */
+  filter: invert();
+  /* filter: drop-shadow(-1px 1px white); */
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  /* background-color: blanchedalmond; */
+}
+.logoAll {
+  margin-left: 50px;
+  font-size: 0;
+}
+h2 {
+  margin-left: 50px;
+  font-size: 40px;
+  color: blue;
+  font-family: "Roboto Slab", serif;
+}
+#acelogo {
+  margin-left: 100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.person {
+  position: absolute;
+  bottom: 130px;
+}
+.person:hover {
+  filter: drop-shadow(2px 4px 10px rgb(247, 244, 244));
+  z-index: 1;
+}
+.p1 {
+  left: 10px;
+}
+.p2 {
+  left: 150px;
+}
+.p3 {
+  left: 300px;
+}
+.p4 {
+  left: 450px;
+}
+
+.text-effect {
+  overflow: hidden;
+  position: relative;
+  -webkit-filter: contrast(110%) brightness(190%);
+  filter: contrast(110%) brightness(190%);
+}
+
+.neon {
+  position: relative;
+  background: black;
+  color: transparent;
+}
+
+.neon::before,
+.neon::after {
+  content: attr(data-text);
+  color: white;
+  -webkit-filter: blur(0.02em);
+  filter: blur(0.02em);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.neon::after {
+  mix-blend-mode: difference;
+}
+
+.gradient,
+.spotlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.gradient {
+  background: linear-gradient(45deg, red, blue);
+  mix-blend-mode: multiply;
+}
+
+.spotlight {
+  -webkit-animation: light 5s infinite linear;
+  animation: light 5s infinite linear;
+  background: radial-gradient(circle, white, transparent 25%) 0 0/25% 25%,
+    radial-gradient(circle, white, black 25%) 50% 50%/12.5% 12.5%;
+  top: -100%;
+  left: -100%;
+  mix-blend-mode: color-dodge;
+}
+
+@-webkit-keyframes light {
+  100% {
+    -webkit-transform: translate3d(50%, 50%, 0);
+    transform: translate3d(50%, 50%, 0);
+  }
+}
+
+@keyframes light {
+  100% {
+    -webkit-transform: translate3d(50%, 50%, 0);
+    transform: translate3d(50%, 50%, 0);
+  }
+}
+
+.neon {
+  font: 700 70px "Lato", sans-serif;
+  /* text-transform: uppercase; */
+  text-align: center;
+  margin-left: 0px;
+}
+
+.neon:focus {
+  outline: none;
+  border: 1px dotted white;
+}
