@@ -13,11 +13,9 @@ body {
   width: 100%;
   background-size: cover;
   min-height: 100vh;
-  /* min-width: 100vh; */
-
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .NavLogo {
   position: relative;
@@ -32,18 +30,16 @@ body {
 .AceTitle {
   color: rgb(44, 47, 226);
   font-family: "Zen Dots", cursive;
-  font-size: 30px;
-  box-shadow: 5px 5px 5px 5px rgb(240, 40, 5);
+  font-size: 22px;
+  padding: 10px;
+  margin: 10px 0;
+  /* box-shadow: 0px 0px 5px 4px rgb(240 40 5); */
 }
 .outter {
-  display: inline-flex;
+  /* display: inline-flex;
   justify-content: center;
-  align-items: center;
-  /* margin: auto; */
-  /* margin-top: 80px; */
+  align-items: center; */
   background-color: #e4d9d98a;
-  /* background-size: 50%; */
-  /* height: 700px; */
   width: 90%;
   border-radius: 30px;
   padding: 30px;
@@ -51,17 +47,10 @@ body {
 }
 
 .outer {
-  margin: auto;
-  /* margin-top: 80px; */
   background-color: #ece6e6a8;
-  background-size: 50%;
-  /* height: 700px; */
-  width: 100%;
-  overflow: hidden;
-  border-radius: 30px;
+  /* overflow: hidden; */
   border-radius: 30px;
   /* box-shadow: 7px 6px 6px 45px #f5f5f561; */
-
   /* box-shadow: 9px 4px 15px 3px rgb(158, 158, 214); */
 }
 h1 {
@@ -84,9 +73,10 @@ nav {
 }
 ul {
   margin: 0;
-  display: inline;
-  margin-right: 100px;
-  font-size: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
 }
 .inner {
   /* opacity: 0.5; */
@@ -94,6 +84,7 @@ ul {
   position: relative;
   border-radius: 30px;
   width: 100%;
+  height: 100%;
 }
 .inner::after {
   /* background-color: #e02020; */
@@ -117,7 +108,6 @@ ul {
 }
 .inner1 {
   width: 40%;
-  height: 640px;
   /* background-color: turquoise; */
   display: inline-flex;
   align-items: center;
@@ -129,13 +119,11 @@ ul {
   /* display: inline-flex; */
   position: relative;
   /* top: -1000px; */
-  width: 55%;
-  height: 640px;
+  width: 60%;
   /* background-color: rgb(175, 46, 57); */
 }
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 40px;
   text-align: center;
   margin: auto;
   margin-left: 10px;
@@ -146,13 +134,13 @@ ul {
   /* filter: invert(); */
   /* filter: drop-shadow(-1px 1px white); */
   background-size: cover;
-  width: 250px;
-  height: 250px;
+  width: 240px;
+  height: 240px;
   /* background-color: blanchedalmond; */
 }
 .logoAll {
-  margin-left: 50px;
   font-size: 0;
+  margin-bottom: 5px;
 }
 h2 {
   margin-left: 50px;
@@ -168,25 +156,28 @@ h2 {
 }
 .img-responsive {
   position: absolute;
-  bottom: 130px;
-  height: 50%;
-  width: 30%;
+  bottom: 40px;
+  width: 220px;
+  cursor: pointer;
 }
 .img-responsive:hover {
   filter: drop-shadow(2px 4px 10px rgb(247, 244, 244));
   z-index: 1;
 }
 .p1 {
-  left: 10px;
+  right: 66%;
+  transform: translateX(66px);
 }
 .p2 {
-  left: 150px;
+  right: 44%;
+  transform: translateX(44px);
 }
 .p3 {
-  left: 300px;
+  right: 22%;
+  transform: translateX(22px);
 }
 .p4 {
-  left: 450px;
+  right: 5px;
 }
 
 .text-effect {
@@ -282,21 +273,19 @@ li::after {
 li {
   /* background: none; */
   /* border: 3px solid #fff; */
-  border-radius: 5px;
+  /* border-radius: 5px; */
   color: rgb(245, 10, 10);
-  display: inline;
   font-size: 20px;
   font-weight: bold;
-  /* margin: 1em auto; */
   padding: 1px 5px;
-  position: relative;
   text-transform: uppercase;
-  margin: 0;
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 a {
   font-size: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 li::before,
