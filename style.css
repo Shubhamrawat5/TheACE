@@ -123,7 +123,7 @@ ul {
   /* background-color: rgb(175, 46, 57); */
 }
 .logo {
-  width: 40px;
+  width: 30px;
   text-align: center;
   margin: auto;
   margin-left: 10px;
@@ -298,7 +298,7 @@ li::after {
   /* background: rgb(21, 22, 22); */
   content: "";
   position: absolute;
-  /* z-index: 0; */
+  z-index: 1;
 }
 
 li:hover {
@@ -326,5 +326,5 @@ li:hover {
 .btn-5:hover:after {
   height: 100%;
   width: 150%;
-  z-index: -1;
+  z-index: 0;
 }
