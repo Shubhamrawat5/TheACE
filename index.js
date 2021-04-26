@@ -2,22 +2,22 @@ let ace4members = document.querySelectorAll(".img-responsive");
 let memberList = [
   {
     initial: "SHUBHAM",
-    mid: "SHADOW",
+    mid: '"SHADOW"',
     last: "RAWAT",
   },
   {
     initial: "SHIVANG",
-    mid: "ECHO",
+    mid: '"ECHO"',
     last: "SAKLANI",
   },
   {
     initial: "NITESH",
-    mid: "SHIELD",
+    mid: '"SHIELD"',
     last: "RAWAT",
   },
   {
     initial: "KARTICK",
-    mid: "KARMA",
+    mid: '"KARMA"',
     last: "VERMA",
   },
 ];
@@ -37,8 +37,10 @@ function showMemberDetail(e) {
   document.querySelector(".mid").textContent = memberList[index].mid;
   document.querySelector(".last").textContent = memberList[index].last;
 
-  document.querySelector(".inner-left").classList.add("hide");
-  document.querySelector(".inner11").classList.remove("hide");
+  setTimeout(() => {
+    document.querySelector(".inner-left").classList.add("hide");
+    document.querySelector(".inner11").classList.remove("hide");
+  }, 0);
 }
 
 function showTeamDetail() {
