@@ -169,24 +169,27 @@ h2 {
 }
 .p1 {
   right: 66%;
-  transform: translateX(66px);
+  /* transform: translateX(40px); */
   width: 210px;
 }
 .p2 {
-  right: 44%;
-  transform: translateX(60px);
+  right: 40%;
+  /* transform: translateX(70px); */
   /* transform: translate3d(60px); */
 
   width: 260px;
 }
 .p3 {
-  right: 22%;
-  transform: translateX(18px);
+  right: 23%;
+  /* transform: translateX(60px); */
   width: 250px;
 }
 .p4 {
-  right: 5px;
+  right: 1%;
+  /* transform: translateX(80px); */
+  transform: rotateY(-173deg);
   width: 260px;
+  filter: brightness(1.1);
 }
 
 .text-effect {
@@ -464,10 +467,11 @@ a {
   }
   .img-responsive {
     bottom: 40px;
-    width: 180px;
+    width: 30%;
   }
   .p1 {
     right: 75%;
+    width: 123px;
     transform: translateX(75px);
   }
   .p2 {

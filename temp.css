@@ -14,7 +14,7 @@ body {
   /* background-size: co; */
   min-height: 100vh;
   /* min-width: 100vh; */
-
+  zoom: 0.65;
   display: inline-flex;
   justify-content: center;
   align-items: center;
