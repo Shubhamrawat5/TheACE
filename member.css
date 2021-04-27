@@ -1,0 +1,123 @@
+.cards-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.container {
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+p {
+  margin: 10px 0;
+}
+.container .card {
+  position: relative;
+  width: 220px;
+  height: 160px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  /* margin-bottom: 210px; */
+}
+.container .card:hover {
+  height: 338px;
+  margin-bottom: 5px;
+}
+.container .card .imgbx {
+  position: relative;
+  width: 210px;
+  height: 220px;
+  top: -60px;
+  left: 5px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.container .card .imgbx:hover {
+  box-shadow: 0 15px 50px rgba(207, 13, 13, 0.2);
+}
+.container .card .imgbx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container .card .content {
+  position: relative;
+  margin-top: -140px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -50px;
+  transition-delay: 0.3s;
+}
+
+.container:last-child .card {
+  margin-bottom: 200px;
+}
+.container:last-child .card:hover {
+  margin-bottom: 22px;
+}
+.mem-pics {
+  height: 220px;
+  width: 210px;
+}
+h2 {
+  margin: auto;
+  font-family: "New Rocker", cursive;
+  font-size: 30px;
+  color: black;
+  /* margin: 0; */
+}
+h3 {
+  font-family: "Freckle Face", cursive;
+  color: rgb(221, 216, 216);
+  text-shadow: 2px 2px red;
+  font-size: 35px;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+li {
+  /* background: none; */
+  /* border: 3px solid #fff; */
+  /* border-radius: 5px; */
+  color: rgb(245, 10, 10);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1px 5px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 20px;
+}
+.header-member {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  width: 100%;
+  /* border: 10px #fff solid; */
+  color: rgb(242 241 247);
+  /* background-color: rgba(216, 240, 192, 0.685); */
+  height: 50px;
+  margin: 50px 0 10px 0;
+  font-family: "Carter One", cursive;
+  text-shadow: 3px 4px #481616;
+}
+/* .header-member-text { */
+/* border: 2px solid white; */
+
+/* } */
+/* Btn 10  */
