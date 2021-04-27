@@ -160,7 +160,7 @@ h2 {
 .img-responsive {
   position: absolute;
   bottom: 40px;
-  width: 220px;
+  width: 240px;
   cursor: pointer;
 }
 .img-responsive:hover {
@@ -170,17 +170,23 @@ h2 {
 .p1 {
   right: 66%;
   transform: translateX(66px);
+  width: 210px;
 }
 .p2 {
   right: 44%;
-  transform: translateX(44px);
+  transform: translateX(60px);
+  /* transform: translate3d(60px); */
+
+  width: 260px;
 }
 .p3 {
   right: 22%;
-  transform: translateX(22px);
+  transform: translateX(18px);
+  width: 250px;
 }
 .p4 {
   right: 5px;
+  width: 260px;
 }
 
 .text-effect {
