@@ -499,6 +499,13 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .outter {
+    padding: 15px;
+    border: 2px solid white;
+  }
+}
+
 .social {
   position: relative;
   margin: 0;
