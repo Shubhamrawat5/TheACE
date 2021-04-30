@@ -188,6 +188,7 @@ h2 {
 .p3 {
   right: 23%;
   /* transform: translateX(60px); */
+  /* transform: rotateY(180deg); */
   width: 250px;
 }
 .p4 {
@@ -347,7 +348,7 @@ a {
   width: 0%;
   height: 100%;
   display: block;
-  background: #599ce9;
+  background: #383333;
   position: absolute;
   -ms-transform: skewX(-20deg);
   -webkit-transform: skewX(-20deg);
@@ -473,11 +474,61 @@ a {
   }
   .img-responsive {
     bottom: 40px;
-    width: 30%;
+    /* width: 30%; */
   }
   .p1 {
     right: 75%;
-    width: 123px;
+    /* width: 123px; */
+    transform: translateX(75px);
+  }
+  .p2 {
+    right: 50%;
+    transform: translateX(50px);
+  }
+  .p3 {
+    right: 26%;
+    transform: translateX(26px);
+  }
+  .initial {
+    font-size: 50px;
+  }
+  .mid {
+    font-size: 45px;
+  }
+  .last {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 990px) {
+  nav {
+    height: 40px;
+  }
+  .NavLogo {
+    height: 23px;
+    width: 23px;
+  }
+  .btn-5 {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+  .acelogo {
+    width: 220px;
+    height: 220px;
+  }
+  .AceTitle {
+    padding: 10px;
+  }
+  .neon {
+    font: 700 60px "Lato", sans-serif;
+  }
+  .img-responsive {
+    bottom: 40px;
+    /* width: 30%; */
+  }
+  .p1 {
+    right: 75%;
+    /* width: 123px; */
     transform: translateX(75px);
   }
   .p2 {
@@ -540,6 +591,9 @@ a {
 
 .social .social-list span.ln {
   background: #0077b5;
+}
+.social .social-list span.wp {
+  background: #20c428;
 }
 
 .social .social-list span.tt {

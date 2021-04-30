@@ -1,0 +1,119 @@
+.header-member {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  width: 100%;
+  /* border: 10px #fff solid; */
+  color: rgb(242 241 247);
+  /* background-color: rgba(216, 240, 192, 0.685); */
+  height: 50px;
+  margin: 50px 0 10px 0;
+  font-family: "Carter One", cursive;
+  text-shadow: 3px 4px #481616;
+}
+.inner-member {
+  /* height: 400px; */
+  width: 100%;
+  /* background-color: black; */
+  background-size: 100px;
+  /* background-attachment: fixed*/
+}
+.inner-member-left {
+  display: inline-flex;
+
+  width: 39%;
+  background-color: blue;
+  height: 400px;
+}
+
+.inner-member-right {
+  display: inline-flex;
+
+  width: 60%;
+  background-color: rgb(29, 161, 24);
+  height: 400px;
+}
+.member-nitesh {
+  display: inline-flex;
+  height: 600px;
+  width: 99%;
+  background-color: white;
+  height: 400px;
+}
+.member-shivang {
+  display: inline-flex;
+  height: 600px;
+  width: 99%;
+  background-color: rgb(204, 118, 60);
+  height: 400px;
+}
+.member-shubham {
+  display: inline-flex;
+  height: 600px;
+  width: 99%;
+  background-color: rgb(92, 143, 238);
+  height: 400px;
+}
+.member-kartick {
+  display: inline-flex;
+  height: 600px;
+  width: 99%;
+  background-color: rgb(161, 24, 31);
+  height: 400px;
+}
+
+.hlo {
+  display: inline-flex;
+  font-family: "New Rocker", cursive;
+  font-size: 30px;
+  margin: 0;
+  margin-left: 50px;
+}
+.name {
+  display: inline-flex;
+  margin: 0;
+}
+
+h2 {
+  /* display: inline-flex; */
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  margin-left: 100px;
+}
+.prof {
+  display: inline-flex;
+  margin: 0;
+  font-size: 30px;
+}
+.member-detail {
+  display: inline-block;
+}
+.nit-pic {
+  display: inline-flex;
+  background: url("AboutUsPics/Capture.JPG") no-repeat;
+
+  height: 320px;
+  width: 320px;
+
+  background-size: 320px;
+  margin-top: 30px;
+  margin-left: 90px;
+  border-radius: 10px;
+  box-shadow: 22px 20px 24px -5px black;
+
+  /* background-size: 100px; */
+}
+a {
+  all: initial;
+  /* border-radius: 100px; */
+}
+
+.social {
+  position: relative;
+  margin-left: 50px;
+  top: 90px;
+  padding: 0;
+  display: flex;
+}
