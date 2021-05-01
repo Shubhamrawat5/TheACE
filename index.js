@@ -52,3 +52,9 @@ ace4members.forEach((member) => {
   member.addEventListener("mouseover", showMemberDetail);
   member.addEventListener("mouseout", showTeamDetail);
 });
+
+/* ----------------------------- HAMBURGER MENU ----------------------------- */
+let hamburger = document.querySelector(".hamburger-menu");
+hamburger.addEventListener("click", () => {
+  document.querySelector(".nav-bar").classList.toggle("active");
+});

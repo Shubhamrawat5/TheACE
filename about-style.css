@@ -107,6 +107,7 @@ h2 {
 }
 a {
   all: initial;
+  width: 100%;
 }
 .social {
   position: relative;
