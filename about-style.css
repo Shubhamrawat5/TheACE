@@ -38,7 +38,7 @@
   display: inline-flex;
   height: 600px;
   width: 99%;
-  background-color: white;
+  background: url("AboutUsPics/bk.jpg");
   height: 400px;
 }
 .member-shivang {
@@ -107,13 +107,35 @@ h2 {
 }
 a {
   all: initial;
-  /* border-radius: 100px; */
 }
-
 .social {
   position: relative;
   margin-left: 50px;
   top: 90px;
   padding: 0;
   display: flex;
+}
+
+.port {
+  position: relative;
+  top: 40px;
+  left: 100px;
+  margin-left: 80px;
+  box-shadow: 2px 2px black;
+}
+
+.shiv-pic {
+  display: inline-flex;
+  background: url("AboutUsPics/Capture.JPG") no-repeat;
+
+  height: 320px;
+  width: 320px;
+
+  background-size: 320px;
+  margin-top: 30px;
+  margin-left: 50px;
+  border-radius: 10px;
+  box-shadow: 22px 20px 24px -5px black;
+
+  /* background-size: 100px; */
 }
