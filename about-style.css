@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth;
+}
 .header-member {
   display: inline-flex;
   justify-content: center;
@@ -21,14 +24,21 @@
 }
 .inner-member-left {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
   width: 39%;
-  background-color: blue;
+  /* background-color: blue; */
   height: 400px;
 }
-
+.ace-logo {
+  background: url(dp/logoo.png) no-repeat;
+  height: 400px;
+  width: 300px;
+  background-size: contain;
+}
 .inner-member-right {
-  display: inline-flex;
+  display: inline-block;
 
   width: 60%;
   background-color: rgb(29, 161, 24);
@@ -38,7 +48,7 @@
   display: inline-flex;
   height: 600px;
   width: 99%;
-  background: url("AboutUsPics/bk.jpg");
+  background: white;
   height: 400px;
 }
 .member-shivang {
@@ -48,6 +58,7 @@
   background-color: rgb(204, 118, 60);
   height: 400px;
 }
+
 .member-shubham {
   display: inline-flex;
   height: 600px;
@@ -161,15 +172,32 @@ a {
 .card1 {
   display: inline-block;
   color: var(--color-two);
-  background-image: url(https://media.discordapp.net/attachments/835206453119680554/835206920792965170/photo.jpg);
   background-size: cover;
-  padding: 6rem 0 0;
+  /* background-repeat: no-repeat; */
+  padding: 7rem 0px 0px;
+  height: 306px;
+  width: 300px;
   max-width: 250px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+
   border-radius: 0.5rem;
   overflow: hidden;
   transition: transform 500ms ease;
   margin: 20px;
   /* margin-left: 50px; */
+}
+.card-nitesh {
+  background-image: url(https://media.discordapp.net/attachments/835206453119680554/835206920792965170/photo.jpg);
+}
+.card-shivang {
+  background-image: url(AboutUsPics/card-kar1.jpg);
+}
+.card-shubham {
+  background-image: url(https://media.discordapp.net/attachments/835206453119680554/835206920792965170/photo.jpg);
+}
+.card-kartick {
+  background-image: url(AboutUsPics/card-kar1.jpg);
 }
 
 .card1:hover,
@@ -177,7 +205,7 @@ a {
   transform: scale(1.05);
 }
 .card-content1 {
-  --padding: 1.5rem;
+  --padding: 2.5rem;
   padding: var(--padding);
   background: linear-gradient(
     hsl(0 0% 0% / 0),
@@ -191,7 +219,7 @@ a {
   width: max-content;
   outline: 1px;
   font-family: "New Rocker", cursive;
-  /* color: blue; */
+  color: rgb(246, 246, 248);
 }
 .card-title1::after {
   content: "";
@@ -212,13 +240,12 @@ a {
 }
 
 .card-body1 {
-  color: rgba(255 255 255 / 0.5rem) ];
-  z-index: 1;
+  color: rgba(255 255 255 / 0.5rem);
 }
 /* ~~~for devices which have hover in them~~ */
 @media (hover) {
   .card-content1 {
-    transform: translateY(65%);
+    transform: translateY(48%);
     transition: transform 300ms ease;
   }
   .card1:hover .card-content1,
