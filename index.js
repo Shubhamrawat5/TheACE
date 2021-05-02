@@ -27,16 +27,16 @@ function showMemberDetail(e) {
   let memberElement = e.target;
   let memberName = e.target.dataset.member;
   console.log(e.target.dataset.member);
-  let index;
+  let order;
 
-  if (memberName == "shadow") index = 0;
-  else if (memberName == "echo") index = 1;
-  else if (memberName == "shield") index = 2;
-  else index = 3;
+  if (memberName == "shadow") order = 0;
+  else if (memberName == "echo") order = 1;
+  else if (memberName == "shield") order = 2;
+  else order = 3;
 
-  document.querySelector(".initial").textContent = memberList[index].initial;
-  document.querySelector(".mid").textContent = memberList[index].mid;
-  document.querySelector(".last").textContent = memberList[index].last;
+  document.querySelector(".initial").textContent = memberList[order].initial;
+  document.querySelector(".mid").textContent = memberList[order].mid;
+  document.querySelector(".last").textContent = memberList[order].last;
 
   setTimeout(() => {
     document.querySelector(".inner-left").classList.add("hide");
