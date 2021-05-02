@@ -278,17 +278,22 @@ a {
 /* --------------------------------- SOCIALS -------------------------------- */
 .social {
   position: relative;
-  margin: 0;
+  margin: 35px 0 15px 0;
   padding: 0;
   display: flex;
+}
+
+.social-list a {
+  all: initial;
+  cursor: pointer;
 }
 
 .social .social-list {
   position: relative;
   list-style: none;
-  width: 60px;
-  height: 60px;
-  margin: 0 30px;
+  width: 40px;
+  height: 40px;
+  margin: 0 17px;
   transform: rotate(-30deg) skew(25deg);
   background: #ccc;
 }
@@ -305,7 +310,7 @@ a {
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 30px !important;
+  font-size: 24px !important;
 }
 
 .social .social-list span.gg {
@@ -553,7 +558,7 @@ a {
   }
 }
 
-/*==== HAMBURGER NAV-BAR ===*/
+/*==== HAMBURGER NAV-BAR + MOVE RIGHT SIDE TO DOWN ===*/
 @media (max-width: 750px) {
   .hamburger-menu {
     display: block;
@@ -602,8 +607,56 @@ a {
   .NavLogo {
     display: none;
   }
+  .AceTitle {
+    font-size: 16px;
+  }
   .active {
     display: block;
     font-size: 0;
+  }
+  .inner {
+    align-items: center;
+    flex-direction: column;
+    height: unset;
+    overflow: hidden;
+  }
+  .inner-left {
+    width: 99%;
+  }
+  .inner-right {
+    width: 99%;
+    height: 17rem;
+  }
+  .social {
+    margin: 10px 0;
+  }
+  .img-responsive {
+    transform: unset;
+    bottom: 0;
+    width: 165px;
+    height: 250px;
+  }
+  .p1 {
+    left: -10px;
+    transform: rotateY(30deg);
+  }
+  .p2 {
+    left: 27%;
+    transform: translateX(-27px);
+  }
+  .p3 {
+    left: 57%;
+    transform: translateX(-57px);
+  }
+  .p4 {
+    left: 89%;
+    transform: translateX(-89px);
+    height: 262px;
+  }
+}
+
+@media (max-width: 400px) {
+  .AceTitle {
+    font-size: 14px;
   }
 }
