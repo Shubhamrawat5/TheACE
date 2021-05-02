@@ -162,12 +162,7 @@ nav {
   text-shadow: 2px 2px black;
   /* margin-bottom: 5px; */
 }
-h2 {
-  margin-left: 50px;
-  font-size: 40px;
-  color: blue;
-  font-family: "Roboto Slab", serif;
-}
+
 #acelogo {
   margin-left: 100px;
   width: 300px;
