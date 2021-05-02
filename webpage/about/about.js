@@ -21,3 +21,9 @@ for (let i = 0; i < 4; ++i) {
   let randomNumb = Math.floor((Date.now() * Math.random()) % 4);
   memberAce[i].style.order = randomNumb;
 }
+
+/* ----------------------------- HAMBURGER MENU ----------------------------- */
+let hamburger = document.querySelector(".hamburger-menu");
+hamburger.addEventListener("click", () => {
+  document.querySelector(".nav-buttons ").classList.toggle("active");
+});
