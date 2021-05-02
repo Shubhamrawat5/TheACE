@@ -1,3 +1,4 @@
+/* ----------------------- home page hover member text ---------------------- */
 let ace4members = document.querySelectorAll(".img-responsive");
 let memberList = [
   {
@@ -39,13 +40,13 @@ function showMemberDetail(e) {
 
   setTimeout(() => {
     document.querySelector(".inner-left").classList.add("hide");
-    document.querySelector(".inner11").classList.remove("hide");
+    document.querySelector(".hovertext").classList.remove("hide");
   }, 0);
 }
 
 function showTeamDetail() {
   document.querySelector(".inner-left").classList.remove("hide");
-  document.querySelector(".inner11").classList.add("hide");
+  document.querySelector(".hovertext").classList.add("hide");
 }
 
 ace4members.forEach((member) => {
@@ -56,5 +57,5 @@ ace4members.forEach((member) => {
 /* ----------------------------- HAMBURGER MENU ----------------------------- */
 let hamburger = document.querySelector(".hamburger-menu");
 hamburger.addEventListener("click", () => {
-  document.querySelector(".nav-bar").classList.toggle("active");
+  document.querySelector(".nav-buttons ").classList.toggle("active");
 });
