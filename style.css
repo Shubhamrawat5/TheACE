@@ -187,6 +187,8 @@ a {
   color: rgb(199, 182, 182);
   text-shadow: 2px 2px black;
   font-family: "Zen Dots", cursive;
+  filter: drop-shadow(1px 1px 5px rgb(26, 23, 23));
+
   font-size: 22px;
   padding: 10px;
   margin: 10px 0;
@@ -304,6 +306,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
+  filter: drop-shadow(2px 2px 3px rgb(12, 9, 9));
   height: 100%;
   transition: 0.5s;
   background: #f3f3f3;

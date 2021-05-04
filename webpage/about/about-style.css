@@ -15,6 +15,19 @@
   font-family: "Carter One", cursive;
   text-shadow: 3px 4px #481616;
 }
+.ace-logo {
+  background: url("../../dp/logoo.png") no-repeat;
+  background-size: 250px;
+  height: 200px;
+  width: 300px;
+}
+.ace-logo2 {
+  background: url("AboutUsPics/logo.png") no-repeat;
+  background-size: 250px;
+  height: 200px;
+  width: 300px;
+  mix-blend-mode: multiply;
+}
 .inner-member {
   /* height: 400px; */
   width: 100%;
@@ -22,27 +35,26 @@
   background-size: 100px;
   /* background-attachment: fixed*/
 }
+.ace-header-container {
+  height: 400px;
+  display: inline-flex;
+  width: 100%;
+}
 .inner-member-left {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
   width: 39%;
+  height: inherit;
   /* background-color: blue; */
-  height: 400px;
 }
-.ace-logo {
-  background: url(dp/logoo.png) no-repeat;
-  height: 400px;
-  width: 300px;
-  background-size: contain;
-}
+
 .inner-member-right {
   display: inline-block;
-
   width: 60%;
+  height: inherit;
   background-color: rgb(29, 161, 24);
-  height: 400px;
 }
 .member-container {
   display: inline-flex;
