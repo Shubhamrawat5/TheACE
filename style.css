@@ -181,6 +181,7 @@ a {
   background-size: cover;
   width: 240px;
   height: 240px;
+  filter: drop-shadow(2px 4px 9px rgb(247, 244, 244));
 }
 .AceTitle {
   color: rgb(199, 182, 182);
@@ -294,7 +295,7 @@ a {
   width: 40px;
   height: 40px;
   margin: 0 17px;
-  transform: rotate(-30deg) skew(25deg);
+  transform: rotate(-30deg) skew(5deg);
   background: #ccc;
 }
 
@@ -336,27 +337,28 @@ a {
 }
 
 .social .social-list:hover span:nth-child(5) {
-  transform: translate(40px, -40px) scale(1) rotate(30deg);
+  transform: translate(40px, -40px) scale(1) rotate(360deg);
+
   opacity: 1;
 }
 
 .social .social-list:hover span:nth-child(4) {
-  transform: translate(30px, -30px) scale(1) rotate(30deg);
+  transform: translate(30px, -30px) scale(1) rotate(180deg);
   opacity: 0.8;
 }
 
 .social .social-list:hover span:nth-child(3) {
-  transform: translate(20px, -20px) scale(1) rotate(30deg);
+  transform: translate(20px, -20px) scale(1) rotate(180deg);
   opacity: 0.6;
 }
 
 .social .social-list:hover span:nth-child(2) {
-  transform: translate(10px, -10px) scale(1) rotate(30deg);
+  transform: translate(10px, -10px) scale(1) rotate(180deg);
   opacity: 0.4;
 }
 
 .social .social-list:hover span:nth-child(1) {
-  transform: translate(0px, 0px) scale(1) rotate(30deg);
+  transform: translate(0px, 0px) scale(1) rotate(180deg);
   opacity: 0.2;
 }
 
@@ -366,6 +368,7 @@ a {
   width: 140px;
   height: 140px;
   border-radius: 10px;
+  filter: drop-shadow(2px 4px 10px rgb(247, 244, 244));
 }
 .AceTitle2 {
   background-color: black;
