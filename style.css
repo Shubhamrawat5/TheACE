@@ -154,7 +154,7 @@ a {
   position: relative;
   border-radius: 30px;
   width: 100%;
-  height: 480px;
+  height: 510px;
 }
 .inner::after {
   content: "";
@@ -181,6 +181,7 @@ a {
   background-size: cover;
   width: 240px;
   height: 240px;
+  margin: 25px 0 10px 0;
   filter: drop-shadow(2px 4px 9px rgb(247, 244, 244));
 }
 .AceTitle {
@@ -428,6 +429,7 @@ a {
   bottom: 40px;
   width: 240px;
   cursor: pointer;
+  filter: drop-shadow(-3px 2px 3px black);
 }
 .img-responsive:hover {
   filter: drop-shadow(2px 4px 10px rgb(247, 244, 244));
@@ -439,7 +441,7 @@ a {
 }
 .p2 {
   right: 40%;
-  width: 260px;
+  width: 240px;
 }
 .p3 {
   right: 23%;
@@ -447,8 +449,9 @@ a {
 }
 .p4 {
   right: 1%;
-  transform: rotateY(-173deg);
-  width: 260px;
+  transform: rotateY(-173deg) rotateY(15deg);
+  width: 230px;
+  height: 400px;
   filter: brightness(1.1);
 }
 
@@ -487,7 +490,7 @@ a {
   .p2 {
     right: 43%;
     transform: translateX(43px);
-    width: 225px;
+    width: 210px;
   }
   .p3 {
     right: 23%;
@@ -495,7 +498,8 @@ a {
     width: 215px;
   }
   .p4 {
-    width: 220px;
+    width: 195px;
+    height: 340px;
   }
   .initial {
     font-size: 50px;
@@ -538,13 +542,14 @@ a {
     width: 160px;
   }
   .p2 {
-    width: 200px;
+    width: 185px;
   }
   .p3 {
     width: 190px;
   }
   .p4 {
-    width: 195px;
+    width: 170px;
+    height: 305px;
   }
   .initial {
     font-size: 50px;
@@ -611,7 +616,11 @@ a {
     margin: 10px;
   }
   .NavLogo {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    left: 25px;
+    top: 8px;
+    transform: scale(3);
   }
   .AceTitle {
     font-size: 16px;
@@ -639,25 +648,25 @@ a {
   .img-responsive {
     transform: unset;
     bottom: 0;
-    width: 165px;
+    width: 150px;
     height: 250px;
   }
   .p1 {
     left: -10px;
-    transform: rotateY(30deg);
+    transform: rotateY(35deg);
   }
   .p2 {
     left: 27%;
-    transform: translateX(-27px);
+    transform: translateX(-27px) rotateY(10deg);
   }
   .p3 {
     left: 57%;
-    transform: translateX(-57px);
+    transform: translateX(-57px) rotateY(-10deg);
   }
   .p4 {
     left: 89%;
-    transform: translateX(-89px);
-    height: 262px;
+    transform: translateX(-89px) rotateY(-173deg) rotateY(20deg);
+    height: 255px;
   }
 }
 
