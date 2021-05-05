@@ -24,7 +24,8 @@
 }
 .ace-logo img,
 .ace-logo2 img {
-  width: 350px;
+  width: 300px;
+  filter: drop-shadow(2px 4px 6px white);
 }
 
 .inner-member {
@@ -32,9 +33,9 @@
   background-size: 100px;
 }
 .ace-header-container {
-  height: 450px;
   display: inline-flex;
   width: 100%;
+  align-items: center;
 }
 .inner-member-left {
   display: inline-flex;
@@ -42,17 +43,18 @@
   align-items: center;
   flex-direction: column;
   width: 40%;
-  height: inherit;
   /* background-color: blue; */
 }
 
 .inner-member-right {
   display: inline-block;
   width: 60%;
-  height: inherit;
-  background-color: rgb(229 229 229);
-  font-size: 35px;
-  padding: 15px;
+  background-color: rgb(229 229 229 / 18%);
+  font-size: 24px;
+  padding: 30px;
+  text-align: justify;
+  color: white;
+  font-family: sans-serif;
 }
 .member-container {
   display: inline-flex;

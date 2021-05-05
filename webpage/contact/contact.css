@@ -80,6 +80,10 @@ body {
   font-size: 14px;
   color: #222;
 }
+iframe {
+  padding: 25px;
+  box-sizing: border-box;
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   body {
     align-items: baseline;
@@ -88,6 +92,12 @@ body {
 @media (max-width: 767px) {
   body {
     align-items: baseline;
+  }
+  iframe {
+    padding: 0px;
+  }
+  .header-member-text {
+    font-size: 40px;
   }
 }
 .contact_wrapper {
