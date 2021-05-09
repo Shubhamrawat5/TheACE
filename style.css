@@ -33,12 +33,11 @@ nav {
 }
 .NavLogo {
   position: relative;
-  left: 100px;
-  background: url(dp/acee1.png) no-repeat;
+  left: 30px;
+  background: url(dp/THEACE2.png) no-repeat;
   background-size: contain;
-  height: 28px;
-  width: 33px;
-  transform: scale(4.5);
+  height: 33px;
+  width: 120px;
   z-index: 0;
 }
 .hamburger-menu {
@@ -461,8 +460,7 @@ a {
     height: 40px;
   }
   .NavLogo {
-    height: 23px;
-    width: 23px;
+    height: 30px;
   }
   .btn-5 {
     font-size: 20px;
@@ -517,8 +515,7 @@ a {
     height: 37px;
   }
   .NavLogo {
-    height: 23px;
-    width: 23px;
+    height: 26px;
   }
   .btn-5 {
     font-size: 17px;
@@ -616,11 +613,10 @@ a {
     margin: 10px;
   }
   .NavLogo {
-    /* display: none; */
     position: absolute;
-    left: 25px;
-    top: 8px;
-    transform: scale(3);
+    left: 18px;
+    height: 24px;
+    top: 5px;
   }
   .AceTitle {
     font-size: 16px;

@@ -6,19 +6,15 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 60px;
+  font-size: 45px;
   width: 100%;
-  /* border: 10px #fff solid; */
   color: rgb(242 241 247);
-  /* background-color: rgba(216, 240, 192, 0.685); */
   margin: 40px 0 10px 0;
   font-family: "Carter One", cursive;
   text-shadow: 3px 4px #481616;
 }
 .header-member p {
   margin: 25px 0 20px 0;
-}
-.ace-logo {
 }
 .ace-logo2 {
   mix-blend-mode: multiply;
@@ -44,13 +40,11 @@
   align-items: center;
   flex-direction: column;
   width: 40%;
-  /* background-color: blue; */
 }
 
 .inner-member-right {
   display: inline-block;
   width: 60%;
-  /* background-color: rgb(229 229 22 9 / 18%); */
   font-size: 24px;
   padding: 30px;
   text-shadow: 2px 2px 7px rgb(34, 29, 29);
@@ -66,24 +60,24 @@
 }
 .member {
   display: inline-flex;
-  width: 99%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   height: 400px;
 }
-.member-nitesh {
+#member-nitesh {
   background: white;
   order: 0;
 }
-.member-shivang {
+#member-shivang {
   background-color: rgb(204, 118, 60);
   order: 1;
 }
-.member-shubham {
+#member-shubham {
   background-color: rgb(92, 143, 238);
   order: 2;
 }
-.member-kartick {
+#member-kartick {
   background-color: rgb(161, 24, 31);
   order: 3;
 }
