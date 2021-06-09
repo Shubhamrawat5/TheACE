@@ -1,6 +1,9 @@
 * {
   scroll-behavior: smooth;
 }
+button:hover {
+  cursor: pointer;
+}
 
 .header-member {
   display: inline-flex;
@@ -225,11 +228,12 @@ a {
   /* margin-left: 50px; */
 }
 .card-nitesh {
-  background-image: url(https://media.discordapp.net/attachments/835206453119680554/835206920792965170/photo.jpg);
+  background-image: url(AboutUsPics/card-nit.jpg);
   order: 0;
 }
 .card-shivang {
-  background-image: url(AboutUsPics/card-kar1.jpg);
+  background-image: url(https://media.discordapp.net/attachments/835206453119680554/835206920792965170/photo.jpg);
+
   order: 1;
 }
 .card-shubham {
