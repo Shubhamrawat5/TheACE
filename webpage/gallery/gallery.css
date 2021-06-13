@@ -66,14 +66,32 @@ body {
 /*That hides all main images at a 80% size
 On click the images will be displayed at normal size to complete the effect
 */
-.slider input[name="slide_switch"]:checked + label + img {
+.slider input[name="slide_switch"]:checked + label + p + img {
   opacity: 1;
   transform: scale(1);
 }
 
+/* TEXT in image */
+.slider input[name="slide_switch"] + label + p {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  background: #e6f4ee;
+  z-index: 1;
+  padding: 4px 45px;
+  font-family: "Roboto Slab";
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+}
+.slider input[name="slide_switch"]:checked + label + p {
+  transition: 3s;
+  opacity: 1;
+}
+
 @media (max-width: 950px) {
   .slider {
-    padding-top: 70vw;
+    padding-top: 72vw;
     width: 100%;
   }
   .slider input[name="slide_switch"] ~ img {
@@ -81,5 +99,40 @@ On click the images will be displayed at normal size to complete the effect
   }
   .header-gallery {
     font-size: 32px;
+  }
+}
+@media (max-width: 700px) {
+  .slider input[name="slide_switch"] + label + p {
+    font-size: 16px;
+    padding: 3px 30px;
+    top: 0px;
+  }
+}
+
+@media (max-width: 392px) {
+  .slider label {
+    width: 80px;
+    height: 60px;
+  }
+  label img {
+    width: 80px;
+  }
+  .slider input[name="slide_switch"] + label + p {
+    font-size: 12px;
+    padding: 2px 20px;
+  }
+}
+
+@media (max-width: 332px) {
+  .slider input[name="slide_switch"] + label + p {
+    font-size: 8px;
+    padding: 2px 10px;
+  }
+  .slider label {
+    width: 60px;
+    height: 45px;
+  }
+  label img {
+    width: 60px;
   }
 }
