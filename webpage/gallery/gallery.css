@@ -1,91 +1,85 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .header-gallery {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
-  width: 100%;
-  /* border: 10px #fff solid; */
+  text-align: center;
+  font-size: 40px;
   color: rgb(242 241 247);
-  /* background-color: rgba(216, 240, 192, 0.685); */
-  height: 50px;
-  margin: 50px 0 10px 0;
-  font-family: "Carter One", cursive;
+  margin: 20px 0 0 0;
   text-shadow: 3px 4px #481616;
+  font-family: "Carter One", cursive;
+}
+.header-gallery p {
+  margin: 0;
 }
 
-.outer-gallery {
-  
-  
-  
-  
-  /* background-color: blue; */
-  width: 100%;
-  /* height: 600px; */
+/* NOTE IMAGE SHOULD BE OF SIZE 800 x 600 */
 
-  /* background-color: blue; */
-}
+.slider {
+  width: 800px; /*width*/
+  position: relative;
+  padding: 630px 0 20px 0; /*padding top: width + 30*/
+  margin: 20px auto 15px auto;
 
-
-.gird-item{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: #354F90;
-  border-radius: 4px;
-  transition: transform 0.5s ease-in-out;
-  color: white;
- 
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
- }
- .ejercico a {
-   opacity: 0;
-   text-decoration:none;
-   cursor: none;
- }
- .gird-item:hover .ejercico a {
-   color: white;
- 
-   opacity: 1;
-   
- }
- .gird-item:hover {
-   filter: opacity(0.9);
-   transform: scale(1.04);
- }
- 
- /*-------------Gird style----------*/
- 
- .gird-container{
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    /*1fr Columnas que puedes colocar */
-    grid-auto-rows: minmax(250px, auto);
-    gap:15px; /*Separación automática*/
-    padding: 10px;
-    grid-auto-flow: dense; /*Para que no hayan espacios en blanco glaeria*/
- }
- 
- .text{
- 
-   
-     position: absolute;
-     color: white;
-     z-index: 3;
-     text-align: center;
-     margin-top: 20%;
-     
-     margin-left: 35px;
- }
- @media(min-width: 600px){
- .wide {
-   grid-column: span 2;
- }
- .wide2 {
-  grid-column: span 5;
 }
- 
- .tall {
-   grid-row: span 2;
- }
+
+/*Last thing remaining is to add transitions*/
+.slider > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.slider input[name="slide_switch"] {
+  display: none;
+}
+
+.slider label {
+  margin: 0px 5px 10px 5px;
+  height: 75px; /*small preview image width*/
+  border: 3px solid grey;
+  cursor: pointer;
+  transition: all 0.5s;
+  opacity: 0.4;
+}
+
+/*add the click effects*/
+.slider input[name="slide_switch"]:checked + label {
+  border-color: rgb(231, 235, 238);
+  opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*work on the main images*/
+.slider input[name="slide_switch"] ~ img {
+  opacity: 0;
+  transform: scale(0.8);
+  width: 800px;
+}
+/*That hides all main images at a 80% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name="slide_switch"]:checked + label + img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (max-width: 950px) {
+  .slider {
+    padding-top: 70vw;
+    width: 100%;
+  }
+  .slider input[name="slide_switch"] ~ img {
+    width: 100%;
+  }
+  .header-gallery {
+    font-size: 32px;
+  }
+}
