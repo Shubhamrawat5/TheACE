@@ -13,6 +13,7 @@ body {
   border: 3px solid white;
   margin: auto;
   margin-top: 10px;
+  max-width: 1400px;
 }
 .outer {
   background-color: #ece6e61f;
@@ -145,6 +146,10 @@ a {
 .btn1O:hover::after {
   opacity: 1;
   width: 120%;
+}
+
+.header-member-text {
+  margin: 0;
 }
 
 /* ---------------------------------- INNER --------------------------------- */
