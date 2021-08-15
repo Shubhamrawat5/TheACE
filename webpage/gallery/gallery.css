@@ -86,6 +86,19 @@ On click the images will be displayed at normal size to complete the effect
   opacity: 1;
 }
 
+.yt-video {
+  display: block;
+  margin: auto;
+}
+.yt-title {
+  text-align: center;
+  margin: 0;
+  color: white;
+  padding: 10px 0 20px 0;
+  text-shadow: 1px 1px black;
+  font-size: 25px;
+}
+
 @media (max-width: 950px) {
   .slider {
     padding-top: 72vw;
@@ -104,6 +117,23 @@ On click the images will be displayed at normal size to complete the effect
     padding: 3px 30px;
     top: 0px;
   }
+  .yt-video {
+    width: 400px;
+    height: 226px;
+  }
+  .yt-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 490px) {
+  .yt-video {
+    width: 330px;
+    height: 186px;
+  }
+  .yt-title {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 392px) {
@@ -117,6 +147,13 @@ On click the images will be displayed at normal size to complete the effect
   .slider input[name="slide_switch"] + label + p {
     font-size: 12px;
     padding: 2px 20px;
+  }
+  .yt-video {
+    width: 90%;
+    height: auto;
+  }
+  .yt-title {
+    font-size: 18px;
   }
 }
 
